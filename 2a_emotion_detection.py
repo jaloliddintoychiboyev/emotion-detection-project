@@ -17,3 +17,7 @@ def emotion_detector(text_to_analyze):
     response = requests.post(url, json=input_json, headers=headers)
 
     return response.text
+
+
+# test call (this is OUTSIDE the function)
+print(emotion_detector("I love learning Python"))
